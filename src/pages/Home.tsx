@@ -48,7 +48,7 @@ export function Home() {
               <a href={`mailto:${ME.email}`}>Entrar em Contato</a>
             </Button>
             <Button asChild variant="outline" size="default" className="rounded-full w-full sm:w-auto sm:px-8 sm:h-12 h-11 text-base border-white/10 hover:bg-white/5">
-              <a href="/curriculo-filipe.pdf" download="curriculo-filipe.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="curriculo-filipe.pdf" download="curriculo-filipe.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 size-4" /> Baixar CV
               </a>
             </Button>
@@ -63,7 +63,7 @@ export function Home() {
         >
           <div className="absolute inset-0 bg-white/5" />
           <img 
-            src="/profile.jpeg" 
+            src="profile.jpeg" 
             alt="Filipe Rodrigues Moura" 
             className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
             referrerPolicy="no-referrer"
