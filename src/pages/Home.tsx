@@ -5,7 +5,7 @@ import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import { SkillCard } from "@/src/components/ui/SkillCard";
 import { ContactCard } from "@/src/components/ui/ContactCard";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
@@ -38,7 +38,7 @@ export function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start w-full sm:w-auto gap-3 sm:gap-4 mt-2 md:mt-4 max-w-xs sm:max-w-none mx-auto md:mx-0">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center md:justify-start w-full sm:w-auto gap-3 sm:gap-4 mt-2 md:mt-4 max-w-xs sm:max-w-none mx-auto md:mx-0">
             <Button asChild size="default" className="rounded-full w-full sm:w-auto sm:px-8 sm:h-12 h-11 text-base">
               <Link to="/projetos">
                 Ver Projetos <ArrowRight className="ml-2 size-4" />
@@ -46,6 +46,11 @@ export function Home() {
             </Button>
             <Button asChild variant="ghost" size="default" className="rounded-full w-full sm:w-auto sm:px-8 sm:h-12 h-11 text-base">
               <a href={`mailto:${ME.email}`}>Entrar em Contato</a>
+            </Button>
+            <Button asChild variant="outline" size="default" className="rounded-full w-full sm:w-auto sm:px-8 sm:h-12 h-11 text-base border-white/10 hover:bg-white/5">
+              <a href="/curriculo-filipe.pdf" download="curriculo-filipe.pdf" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 size-4" /> Baixar CV
+              </a>
             </Button>
           </div>
         </div>
